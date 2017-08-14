@@ -1,0 +1,393 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*import fonts*/
+@font-face {
+    font-family: 'Lora-regular';
+    src: url(../fonts/Lora/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lora-bold';
+    src: url(../fonts/Lora/Lora-Bold.ttf);
+}
+@font-face {
+    font-family: 'Radiance';
+    src: url('http://cdn.dota2.com/apps/dota2/fonts/radiance.eot');
+    src: url('http://cdn.dota2.com/apps/dota2/fonts/radiance.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance.woff') format('woff'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance.ttf') format('truetype'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Radiance-Bold';
+    src: url('http://cdn.dota2.com/apps/dota2/fonts/radiance-bold.eot');
+    src: url('http://cdn.dota2.com/apps/dota2/fonts/radiance-bold.eot?#iefix') format('embedded-opentype'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance-bold.woff') format('woff'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance-bold.ttf') format('truetype'),
+         url('http://cdn.dota2.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    background-repeat: no-repeat;
+    /*background-position: center 289px;*/
+}
+
+a img {
+    border: none;
+}
+
+nav {
+    display: block;
+}
+button {
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+.btn-dota {
+    background-color: #d01d1d;
+    border: 1px solid #800b0b;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+}
+.btn-dota:hover {
+   background-color: #791111;
+    transition: ease all 0.5s;
+    
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 78px;
+    margin-bottom: 1px;
+    z-index: 1000;
+}
+
+.navbarShadow {
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    top: 77px;
+    left: 0px;
+    background-image: url(../img/header_bg_shadow.png);
+    background-repeat: repeat-x;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.nav-dota {
+    background-image: linear-gradient( to top, #171717, #111111, #040404, #010101);
+}
+
+#navcontent {
+    position: relative;
+    width: 938px;
+    height: 79px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.navlogoDota {
+    width: 200px;
+}
+
+.item {
+    height: 73px;
+    margin-top: 27px;
+    display: inline-block;
+}
+
+.item .dotalogo {
+    position: absolute;
+    margin-top: -36px;
+    top: 0;
+    opacity: 0.8;
+}
+
+#navcontent img {
+    width: 67px;
+    height: 62px;
+}
+
+#navcontent .navitem {
+    position: relative;
+    display: inline-block;
+    margin-right: 26px;
+}
+
+#navcontent a.navitem {
+    color: #908d8b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lora-regular', sans-serif;
+    margin-top: 7px;
+}
+#navcontent a.navitem:hover {
+    color: #fff;
+    transition: ease all 0.8s;
+}
+
+/*conteudo*/
+.contentSide {
+    width 100%;
+    background-color: #000;
+}
+.banner_first {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    background-image: url(../img/bg_fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+.overlay {
+    position: absolute;
+     width: 100%;
+    height: 780px;
+    background-image: url(../img/video_mask.png);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 90;
+}
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.sobre {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.sobre h1 {
+    font-family: 'Radiance-Bold', sans-serif;
+    color: #908d8b;
+    text-align: center;
+    font-size: 24px;
+}
+.sobre p {
+    font-family: 'Radiance', sans-serif;
+    color: #908d8b;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 18px;
+}
+/*video content*/
+.videoIntro {
+    background-image: url(../img/bg_11.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.videoIntro iframe {
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 10px 10px #000;
+}
+/*HERO PAGE*/
+.herois {
+    background-image: url(../img/bg_11.jpg);
+    background-size: contain;
+    padding: 3em;
+}
+.heroi h2 {
+    color:#908d8b;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 50px;
+}
+.heroi {
+    width: 100%;
+}
+.heroi img  {
+   width: 560px;
+}
+.heroi p{
+    font-size: 16px;
+    font-family: 'Radiance', sans-serif;
+    color: #908d8b;
+    line-height: 20px;
+}
+.coluna_4 {
+    float: left;
+    width: 25%;
+}
+.coluna_3 {
+    float: left;
+    width: 33%;
+}
+.coluna_5 {
+    float: left;
+    width: 50%;
+}
+.main_skills {
+    width: 100%;
+    
+}
+.center{
+    margin: 0 auto;
+    display: block;
+}
+.main_skills img {
+    border-radius: 20px;
+    padding: 5px;
+    width: 90px;
+}
+.video {
+    width: 100%;
+    margin-top: 40px;
+}
+.video iframe {
+     margin: 0 auto;
+    display: block;
+    box-shadow: 0px 10px 10px #000;
+}
+hr {
+    border-color: #908d8b;
+    margin-top: 30px;
+}
+/*campeonatos*/
+.banner_champ {
+    width: 100%;
+    height: 780px;
+    background-image: url(../img/ti_image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content_champ {
+    background-image: url(../img/bg_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.content_champ h1{
+    font-family: 'Radiance', sans-serif;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;
+}
+.content_champ h3{
+    font-family: 'Radiance', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+}
+.content_champ p {
+    font-family: 'Radiance', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+}
+.champ_team {
+    background-image: url(../img/wings-gaming-dota-2-ti6-champions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.champ_team h3{
+    font-family: 'Radiance', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+}
+.highlights {
+   background-image: url(../img/bg_11.jpg);
+    background-size: contain;
+    padding: 3em; 
+}
+.highlights h3 {
+     font-family: 'Radiance', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+}
+/*como jogar*/
+.banner_play {
+    width: 100%;
+    height: 780px;
+    background-image: url(../img/keyart.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 3em;
+}
+.banner_play h3 {
+   font-family: 'Radiance', sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: center; 
+    margin-top: 20%;
+}
+.play {
+    background-image: url(../img/bg_11.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.play img {
+   width: 480px; 
+    box-shadow: 0px 10px 10px #000;
+}
+.play p {
+    font-family: 'Radiance', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #beb5ae;
+    text-shadow: 2px 2px 8px #000000;
+    text-align: left;
+}
+/*footer*/
+footer {
+    background-color: #000;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+footer img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+footer p {
+    font-family: 'Radiance', sans-serif;
+    font-size: 16px;
+    color: #908d8b;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
